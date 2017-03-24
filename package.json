@@ -11,5 +11,5 @@
   "main":"./src",
   "version": "0.0.0",
   "dependencies": {},
-  "repository":""
+  "repository":"git@github.com:durga-js/vue-durga.git"
 }
