@@ -1,0 +1,15 @@
+{
+  "name": "vue-durga",
+  "description": "Durga plugin for vuejs",
+  "author": [
+    {
+      "name": "Christian Blaschke",
+      "email": "mail@platdesign.de",
+      "url": "https://github.com/platdesign"
+    }
+  ],
+  "main":"./src",
+  "version": "0.0.0",
+  "dependencies": {},
+  "repository":""
+}
