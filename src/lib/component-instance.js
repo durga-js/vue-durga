@@ -2,6 +2,7 @@
 
 
 module.exports = class DurgaComponentInstance {
+
 	constructor(durga, component) {
 		this.$rootDurga = durga;
 		this._subs = {};
@@ -10,14 +11,12 @@ module.exports = class DurgaComponentInstance {
 		if(component.$options.topics && Array.isArray(component.$options.topics)) {
 			component.$options.topics.forEach(topic => {
 
-				this.subscribe(topic, null, (err, res) => {
-					console.log('ready!');
-				});
+				this.subscribe(topic)
+					.then(res => true, err => true);
 
 			});
 		}
 
-		this.info = {};
 	}
 
 	subscribe(topic, payload) {
