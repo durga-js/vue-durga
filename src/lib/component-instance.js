@@ -36,6 +36,10 @@ module.exports = class DurgaComponentInstance {
 		return this.$rootDurga.exec(...arguments);
 	}
 
+	collection() {
+		return this.$rootDurga.collection(...arguments);
+	}
+
 	get vuex() {
 		return this.$rootDurga.vuex;
 	}
